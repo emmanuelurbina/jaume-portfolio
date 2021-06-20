@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Poppins:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Poppins:wght@200;300;400;500;700;900&display=swap');
 :root {
   --primary: #310A90;
 }
@@ -11,10 +11,11 @@
 body {
   background: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
   padding: 37px 128px;
+  background-repeat: no-repeat;
 }
 
 .navbar {
-  font-family: 'Poppins', 'sans-seri';
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -75,7 +76,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 115px;
-  font-family: 'Poppins', 'sans-seri';
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-information {
@@ -125,6 +126,40 @@ body {
   height: auto;
 }
 
+.objective {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.objective-content {
+  margin: 200px 105px;
+  width: 900px;
+  height: auto;
+  text-align: center;
+  color: var(--primary);
+}
+
+.objective-content p:nth-child(1) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px;
+  font-weight: 200;
+  line-height: 55px;
+}
+
+.objective-content p:nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.objective-content p:nth-child(3) .image {
+  width: 80.52px;
+  height: 80.52px;
+  margin-top: 24px;
+}
+
 /*smartphone*/
 
 @media screen and (max-width: 600px) {
@@ -161,5 +196,23 @@ body {
   }
   .main-information .btn {
     width: 100%;
+  }
+  .objective-content {
+    margin: 40px 0;
+    width: 100%;
+  }
+  .objective-content p:nth-child(1) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.83px;
+  }
+  .objective-content p:nth-child(2) {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.83px;
+  }
+  .objective-content p:nth-child(3) .image {
+    width: 80px;
+    height: 80px;
   }
 }
