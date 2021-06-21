@@ -160,6 +160,48 @@ body {
   margin-top: 24px;
 }
 
+.project {
+  padding: 80px 0;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-info {
+  width: 449px;
+  height: 231px;
+  color: var(--primary);
+}
+
+.project-title {
+  margin-left: 4px;
+  padding: 4px 8px;
+  background: #310A90;
+  box-shadow: -4px 4px 0px #FFFFFF;
+  color: #fff;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 55.1px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.project-info p {
+  margin-bottom: 16px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.secondary {
+  background: transparent;
+  color: var(--primary);
+}
+
 /*smartphone*/
 
 @media screen and (max-width: 600px) {
@@ -214,5 +256,23 @@ body {
   .objective-content p:nth-child(3) .image {
     width: 80px;
     height: 80px;
+  }
+  .project {
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
+  .project-info {
+    width: 100%;
+    height: auto;
+  }
+  .project-title {
+
+    font-size: 24px;
+    line-height:39px;
+
+  }
+
+  .button-group {
+    flex-direction:column-reverse;
   }
 }
