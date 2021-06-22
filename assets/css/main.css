@@ -121,10 +121,7 @@ body {
   margin-top: 24px;
 }
 
-.image {
-  width: 100%;
-  height: auto;
-}
+
 
 .objective {
   display: flex;
@@ -168,11 +165,23 @@ body {
   align-items: center;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+  justify-self: space-evenly;
+}
+.project-image {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-info {
   width: 449px;
   height: 231px;
   color: var(--primary);
 }
+
 
 .project-title {
   margin-left: 4px;
@@ -307,6 +316,14 @@ body {
     width: 100%;
     height: auto;
     padding: 40px 0;
+  }
+
+  .project-image{
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+    height: auto;
   }
   .project-title {
     font-size: 24px;
